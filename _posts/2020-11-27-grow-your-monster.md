@@ -7,7 +7,7 @@ project: true
 comments: true
 ---
 
-### Grow Your Monster!
+## Grow Your Monster!
 
 [![grurmon](../assets/img/growyourmonster.png)](https://joomal.github.io/grow-ur-monster/)
 
