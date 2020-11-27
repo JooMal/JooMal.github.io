@@ -5,6 +5,7 @@ date: 2020-11-27
 tags: [project, html, css]
 project: true
 comments: true
+excerpt: "당신만의 몬스터를 만들어보세요!"
 ---
 
 ## Grow Your Monster!
