@@ -22,7 +22,7 @@ kramdown:
   enable_coderay:   false
   syntax_highlighter_opts :
     block:
-      line_numbers: false
+      line_numbers: true
 mathjax:            true
 sass:
   sass_dir:         _sass
