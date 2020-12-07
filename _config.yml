@@ -20,7 +20,7 @@ kramdown:
   entity_output:    as_char
   toc_levels:       1..6
   enable_coderay:   false
-  syntax_highlighter_opts :
+  # syntax_highlighter_opts :
 mathjax:            true
 sass:
   sass_dir:         _sass
