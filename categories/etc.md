@@ -1,5 +1,5 @@
 ---
 layout : category
-title : ETC.
+title : etc
 excerpt : ETC.
 ---
