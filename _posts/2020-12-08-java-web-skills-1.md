@@ -87,7 +87,55 @@ jsp 프로그램 : 브라우저 요청시 **스레드 방식**으로 실행하�
 
 ---
 <a name="3"></a>
+
 ### 3. 개발 환경 설정하기
+
+3.1. JDK 설치하기
+
+- java se 10
+
+3.2. JDK 환경변수 설정하기
+
+- 고급 시스템 설정 → 환경변수 → 시스템 변수
+    - JAVA_HOME, jdk-10 설치 경로
+    - Path, %JAVA_HOME%\bin (빈 폴더에 설정)
+    - 확인 : cmd javac -version
+
+3.3. 톰캣 설치
+
+- Binary Distributions에서 9.0.16버전 exe 다운받아 셋업한다. 포트번호는 8090으로 변경, User Name admin, 비밀번호 1234, 설치 폴더는 디폴트가 아니라 C에서 새폴더를 만들어 tomcat9로 지정한다.
+
+3.4. 이클립스 IDE 설치
+
+- C/javaWeb 폴더 → workspace 폴더로 설정
+
+3.5. Java EE API 문서 즐겨찾기에 추가하기
+
+- 오라클에 접속하여 Menu → Products → Java → Java EE → Enterprise Edition 클릭 → documentation → API Documentation Java EE 8을 즐겨찾기에 추가
+
+3.6. 비쥬얼 스튜디오 코드 설치하기
+
+- code.visualstudio.com에 접속하여 설치 → Download for Windows → exe실행파일 클릭하여 설치 시작 → VisualStudio code 실행
+
+3.7. Oracle DBMS 설치
+
+- 보이는 주소로 들어가여 다운로드 → 교육용 오라클 Database Expression Edition 11g Relrease 11.2.0.2.0(11gR2) for Windows x64 다운로드 (오라클 로그인 사용자이름 : 메일주소, 비밀번호 : 대문자 특수문자 포함) → setup.exe 클릭하여 설치 시작 (설치 시간이 오래 걸린다), 비밀번호 1234
+- cmd에서 오라클 접속 프로그램인 sqlplus 라고 입력, system에 이전에 입력한 비밀번호로 접속
+- create user scott identified by tiger; (비밀번호가 tiger)
+- grant resource, connect to scott;
+- exit
+- sqlplus
+- scott, tiger 로 접속
+- 컴퓨터관리-서비스에서 OracleServiceXE와 리스너 수동으로 설정
+
+3.8. SQL Developer 설치하기
+
+- 보이는 주소로 들어가여 다운로드 → 18.1 받아야하는데 이전 버전 19.1까지만 볼 수 있어서 19.1 다운받음
+
+3.9. exERD
+
+- 이클립스 플러그인
+    - 설치 되었는지 확인 : Show view > Other > eXERD 설치 되었는지 확인
 
 ---
 <a name="4"></a>
