@@ -22,8 +22,43 @@ comments: true
 - 에러 2 : `Copying assembly from 'Temp/Unity.Subsystem.Registration.dll' to 'Library/PlayerScriptAssemblies/Unity.Subsystem.Registration.dll' failed`
   - 시도 1. 스크립트 폴더를 마우스 오른쪽 버튼으로 클릭 -> Reimport 메뉴 항목을 왼쪽 클릭 (그러나 매번 이렇게 해야한다고 한다.)
     - 결과 : Building Player 등으로 잘 넘어감.
+    - Buidling Gradle project 중간에 `Build failure` 발생, 에러메세지 `Manifest merger failed with multiple errors, see logs See the Console for details` (에러3으로 이동)
   - 시도 2. `FINALLY. I got a lot of Unity errors and this was the cause. Also solved with Malwarebytes. Looks like miners F*** up with the Unity importer... Thanks a lot, I've been having troubles for weeks.` Security Program때문에 이런 충돌이 발생하는 듯. Coin Miner Malware가 해당 충돌을 일으키기도 한다. (시도 1에서 잘 해결되어 시도 2는 적어두기만 하고 진행하지 않음.)
 
+---
+
+- 에러 3 : `Missing 'package' key attribute on element package at [:arcore_client:] AndroidManifest.xml:30:9-54`
+  - 시도 1. [해결 레퍼런스](https://answers.unity.com/questions/1780156/unity-build-error-missing-package-key-attribute-on.html) Gradle과 ARCore 플러그인이 충돌하는 상황이라고 함. [Build for Android 11 with Unity](https://developers.google.com/ar/develop/unity/android-11-build) 문서를 따라 진행.
+      - `<queries>` 엘레먼트가 ARCore Extensions for AR Foundation과 ARCord SDK for Unity에 같이 들어가있고, 이를 사용하려면 Gradle version이 5.6.4 이상이어야 한다.
+      - `C:/Program Files/Unity/Hub/Editor/2019.4.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/gradle`에서 확인해보니 현재 gradle이 5.1.1버전이어서, 적당히 6.6.1 버전으로 업그레이드 해줌. (폴더에서 lib만 빼와서 넣음. 이렇게 해도 되는건가?)
+  - 결과 : 에러 4로 이동
+
+---
+
+- 에러 4 : `Task:launcher:prepareLint.Jar`을 포함한 다수의 Task ... (UP-TO-DATE) 에러 발생
+  - 시도 1. [해결 레퍼런스](https://github.com/googleads/googleads-mobile-unity/issues/1282) Android Resolver - Delete Resolved Libraries 이후 Android Resolver - Force Resolve 진행
+  - 에러 4.1. : `Android Dependencies Resolution Failed! your application will not run, see the log for details.`
+    - 시도 1.1 : [해결 레퍼런스](https://stackoverflow.com/questions/50251836/unity-android-resolution-failed)에서 Assets/Plugins/Android를 백업해두고, 전체 폴더를 지우고, Unity Editor를 재시작하고, Resolution을 다시 진행 (`Assets > External Dependency Manager > Android Resolver > Resolve` or `Assets > Play Services Resolver > Android Resolver > Resolve`)
+      - 결과 : Resolving 하면서 Labelling libraries도 순차적으로 진행되었으나, 다시 Resolution Failed 발생
+      - `Failed to fetch the following dependencies:
+com.google.firebase:firebase-app-unity:+
+com.google.firebase:firebase-auth-unity:+
+com.google.firebase:firebase-database-unity:+` 확인
+        - [해결 레퍼런스](https://blueasa.tistory.com/2409) : 환경 변수가 JAVA_HOME이 제대로 설정되어있지 않다는 듯. [이 게시글](https://macchiato.tistory.com/9)보고 다시 해줌. 음.. Path 설정이 제대로 안되어있었던 것 같다. 해주는 김에 자바 13.1 버전으로 다시 싹 재설정함.
+    - 결과 : Path 설정 다시해준 후, 시도 1.1.을 다시 시도함, 이번에더 Resolution Failed 뜸.
+    - 시도 1.2. : Assets - Import custom package로 auth, app, database를 다시 넣어준다.
+
+---
+
+- 상황이 변하지 않아 다시 에러 3을 해결하기 시작
+- 시도 2. [해결 레퍼런스](https://forum.unity.com/threads/arcore-xr-plugin-2-12-requires-updated-gradle-on-unity-2019-4.1003444/) 유니티 2019.4 버전은 그레이들 5.6.4 이상 버전을 사용해야한다는 공식 질의응답. 링크된 [문서](https://developers.google.com/ar/develop/unity/android-11-build#unity_20193_20194_and_20201)에서 2019.4 버전 파트를 다시 진행. (2020년 9월경 안드로이드 11로 업데이트되면서 발생하는 에러라고 하니까, 이전에 해당 에러가 발생하지 않았던 이유가 설명된다.)
+  - 시도 2.1. [그레이들 설치](https://itbellstone.tistory.com/101) 확인해보니 현재 내 시스템에서의 Gradle이 4.4.1버전이어서 해당 에러가 발생하는건가 싶어서, 6.6.1로 환경변수 설정 등을 다시 해주고 4.4.1버전은 아예 삭제해주었다.
+  - 결과 : Gradle build failed
+  - 시도 2.1.1. gradle build
+  - 시도 2.1.2. [레퍼런스](https://stackoverflow.com/questions/63755131/gradle-error-could-not-find-com-android-tools-buildgradle6-6-1)
+
+
+- 결과 : apk 생성 완료됨
 
 ##### 12.25
 - `Could not find key in plist file: [DATABASE_URL]` 에러 발생
@@ -93,6 +128,7 @@ comments: true
 
 ##### 12.21.
 유니티와 프로젝트를 받아두고, 프로젝트 압축만 2시간을 풀었다. 받고보니 유니티 2019.4.16f1버전 프로젝트가 아니라 `2019.4.1f1` 버전이어서 다시 받는 중.
+- 알고보니 4.xx 버전은 다 같게 동작해서 맞춰줄 필요가 없었다.
 
 서버 연결하고 모바일앱은 텍스트에서 큐알이미지로, 키넥트앱은 큐알이미지에서 텍스트로 넘겨주는 코드 필요.
 
