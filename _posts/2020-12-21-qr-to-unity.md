@@ -9,7 +9,8 @@ comments: true
 
 ### 기록
 
-##### 12.26
+---
+
 - 에러 1 : `Android SDK is missing required platform API: Required API level 30`
   - 해결 1. Update Android SDK 클릭
     - 디바이스가 연결된 상태임에도, 디바이스를 연결해달라는 메세지 발생.
@@ -56,11 +57,12 @@ com.google.firebase:firebase-database-unity:+` 확인
   - 결과 : Gradle build failed
   - 시도 2.1.1. gradle build
   - 시도 2.1.2. [레퍼런스](https://stackoverflow.com/questions/63755131/gradle-error-could-not-find-com-android-tools-buildgradle6-6-1)
-
-
 - 결과 : apk 생성 완료됨
 
-##### 12.25
+---
+---
+---
+
 - `Could not find key in plist file: [DATABASE_URL]` 에러 발생
 - [해결 레퍼런스](https://github.com/firebase/quickstart-unity/issues/892)
 - means that the XML generator is attempting to find a URL for your configured Database on the backend. Could you check your GoogleServices.plist file that you have locally to see if there's an entry like this:
@@ -116,22 +118,4 @@ com.google.firebase:firebase-database-unity:+` 확인
     - Firebase에서 제안한 External Dependency Manager로 기존의 의존성 매니저를 대체했더니 대략 10시간을 돌려도 끝나지 않는 이상한 의존성 업데이트를 해서, 아침에 확인 후 유니티 강제종료함.
     - 결과 : 이후 다시 빌드하자 에러메세지 사라짐.
 
-
-##### 12.23.
 - 유니티 안드로이드 apk 빌드 [레퍼런스](https://dooding.tistory.com/11)
-
-
-##### 12.22.
-파이어베이스 콘솔로 파이어베이스 프로젝트 생성
-유니티-파이어베이스 연동 매뉴얼 따라서 진행중
-파이어베이스 sdk 받는데만 20분이 걸린다. 노트북을 사서 그거로 메이플을 하고 싶은 마음이 든다.. 메이플을 못한지 어느덧 4일 정도가 지났다.
-
-##### 12.21.
-유니티와 프로젝트를 받아두고, 프로젝트 압축만 2시간을 풀었다. 받고보니 유니티 2019.4.16f1버전 프로젝트가 아니라 `2019.4.1f1` 버전이어서 다시 받는 중.
-- 알고보니 4.xx 버전은 다 같게 동작해서 맞춰줄 필요가 없었다.
-
-서버 연결하고 모바일앱은 텍스트에서 큐알이미지로, 키넥트앱은 큐알이미지에서 텍스트로 넘겨주는 코드 필요.
-
-키넥트쪽은 알고보니 `2019.4.4f1`버전이어서 또 받는 중.
-일단 유니티는 4.x 버전이면 어느 정도 호환이 가능하다는 말에 버전 4.16f1로 진행.
-안드로이드 iOS 필요해서 unity에 받아둠.
