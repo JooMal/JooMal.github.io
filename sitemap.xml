@@ -1,20 +1,457 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for post in site.posts %}
-    <url>
-        <loc>{{ site.url }}{{ post.url | remove: 'index.html' }}</loc>
-    </url>
-    {% endfor %}
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-    {% for page in site.pages %}
-    {% if page.layout != nil %}
-    {% if page.layout != 'feed' %}
-    <url>
-        <loc>{{ site.url }}{{ page.url | remove: 'index.html' }}</loc>
-    </url>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
+
+<url>
+  <loc>https://joomal.github.io/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/about/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/posts/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/tags/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/categories/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/categories/ps/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/categories/til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/categories/study/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/categories/etc/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/projects/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/210111til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/210111spring0/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/210110til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/210108til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/210108aca/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/210107til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/210107aca/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/210106aca/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/210105til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/210105resultset/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/210105ps110480/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/210105jsp/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/210105aca/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/210104til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/210104jsp2/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/210104jsp/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/210103til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/210103jsp2/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/210103jsp/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/210102til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/210102jsp/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/201231til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/201231jsp/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/201230til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/201230aca/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/201229til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/201229aca/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/201223til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/201222til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/1222aca/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/201231javastudy02/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/qr-to-unity/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/Springboot/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/Spring-7/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/201221til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/1221javastudy01/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/Spring-6/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/Spring-5/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/1215til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/Spring-4/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/1214til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/1213til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/1209til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/java-web-skills-1/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/java-stream/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/Spring-3/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/1208til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/rouge/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/Spring-2/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/1207til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/Spring-1/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/2441/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/1316/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/1206til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/1193/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/5622/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/1205til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/8958/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/4673/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/1204til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/1203til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/1138/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/5585/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/2217/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/1201til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/%EC%98%AC%EB%B0%94%EB%A5%B8%EA%B4%84%ED%98%B8/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/7569/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/1130til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/10789/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/2898/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/14502/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/1129til/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/11655/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/1152/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/11720/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/htmlcss-study/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/grow-your-monster/</loc>
+  <lastmod>2021-01-12T11:07:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/html-css-testing/</loc>
+  <lastmod>2020-11-27T13:50:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://joomal.github.io/grow-ur-monster/</loc>
+  <lastmod>2020-11-27T09:04:10+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
 </urlset>
