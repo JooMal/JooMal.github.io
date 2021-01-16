@@ -44,10 +44,3 @@ excerpt: "cmd 명령어로 자신을 소개해보자!"
 ▶️ 개발환경 : javascript, phaser 3.5.x , apache tomcat 8.5.x
 ▶️ IDE : Eclipse, Bracket
 ▶️ 작업시간 : 14시간
-
----
-### 내가 배운 것
-🔶 타인의 git repository에서 html/css, js 프로젝트를 fork하여 로컬에서 수정하는 법  
-🔶 Notion에서의 협업  
-🔶 반응형 웹의 기본 작동방식  
-🔶 html/css, js 프로젝트를 깃 페이지에 띄우는 법  
