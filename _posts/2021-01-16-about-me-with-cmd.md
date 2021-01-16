@@ -115,7 +115,7 @@ function clear() {
 
 ---
 
-💻 개발 : [Joomal](https://github.com/JooMal)  
-▶️ 개발환경 : javascript, phaser 3.5.x , apache tomcat 8.5.x
-▶️ IDE : Eclipse, Bracket
-▶️ 순작업시간 : 14시간
+💻 개발 : [Joomal](https://github.com/JooMal)    
+▶️ 개발환경 : javascript, phaser 3.5.x , apache tomcat 8.5.x  
+▶️ IDE : Eclipse, Bracket  
+▶️ 순작업시간 : 14시간  
