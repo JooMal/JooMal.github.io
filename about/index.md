@@ -8,7 +8,9 @@ comments: false
 
 <center>🙌아직 작성중...</center>
 
+<center>
 <iframe width="600" height="450" src="https://joomal.github.io/AboutMeCMD/index.html" frameborder="0" scrolling="no" align="center"> <p> 브라우저가 iframe 요소를 지원하지 않습니다. </p></iframe>
+</center>
 
 # 𝑨𝒃𝒐𝒖𝒕 𝒎𝒆
 <img src="../assets/img/deskSet.png">
