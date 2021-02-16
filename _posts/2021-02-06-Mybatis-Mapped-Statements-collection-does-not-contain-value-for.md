@@ -2,8 +2,8 @@
 layout: post
 title: "Mybatis Mapped Statements collection does not contain value for"
 date: 2021-02-06
-tags: [TIL]
-category : [TIL]
+tags: [etc]
+category : [etc]
 comments: false
 ---
 
