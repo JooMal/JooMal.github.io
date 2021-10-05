@@ -1,6 +1,6 @@
 # Site
 title:              on Weekend
-bio:                '조금씩 성장하며 나아갑니다.'
+bio:                '조금씩 성장하며 나아가기'
 description:        "𝙎𝙩𝙪𝙙𝙮𝙞𝙣𝙜"
 reading_time:       true
 words_per_minute:   200
@@ -9,6 +9,7 @@ background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             Seoul
 url:                https://joomal.github.io/
+encoding: utf-8
 
 # Jekyll
 permalink:          /:title/
